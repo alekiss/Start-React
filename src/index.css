@@ -17,3 +17,8 @@ body {
   --color-primary: #9d9570;
   --color-primary-variant: #292d33;
 }
+
+.dark-theme {
+  --color-primary: #ccc9c9;
+  --color-primary-variant: #9d9570;
+}
