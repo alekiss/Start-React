@@ -7,6 +7,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SimpleCounterPage from "./pages/SimpleCounter/indext";
 import ContextAPI from "./pages/ContextApi";
 import ThemeProvider from "./context/ThemeContext";
+import FilterSearch from "./pages/FilterSearch";
+import DisplayList from "./pages/DisplayList";
+import Footer from "./components/Footer";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -17,7 +20,10 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           <Route path="/" element={<Home />} />
           <Route path="/simple-counter" element={<SimpleCounterPage />} />
           <Route path="/context-api" element={<ContextAPI />} />
+          <Route path="/filter-search" element={<FilterSearch />} />
+          <Route path="/list" element={<DisplayList />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </ThemeProvider>
   </React.StrictMode>

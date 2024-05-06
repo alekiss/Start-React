@@ -1,4 +1,4 @@
-import { FaAtom, FaPlus } from "react-icons/fa";
+import { FaAtom, FaList, FaPlus, FaSearch } from "react-icons/fa";
 import Cards from "../../components/Cards";
 import "./styles.css"
 
@@ -13,6 +13,16 @@ const Home = () => {
           "image": <FaAtom />,
           "title": "Context API",
           "route": "context-api"
+        },
+        {
+          "image": <FaSearch />,
+          "title": "Filter Search",
+          "route": "filter-search"
+        },
+        {
+          "image": <FaList />,
+          "title": "Display List",
+          "route": "list"
         },
       ];
     
