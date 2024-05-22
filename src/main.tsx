@@ -10,6 +10,8 @@ import ThemeProvider from "./context/ThemeContext";
 import FilterSearch from "./pages/FilterSearch";
 import DisplayList from "./pages/DisplayList";
 import Footer from "./components/Footer";
+import AxiosCall from "./pages/AxiosCall";
+import FetchCall from "./pages/FetchCall";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -22,6 +24,8 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           <Route path="/context-api" element={<ContextAPI />} />
           <Route path="/filter-search" element={<FilterSearch />} />
           <Route path="/list" element={<DisplayList />} />
+          <Route path="/axios" element={<AxiosCall />} />
+          <Route path="/fetch" element={<FetchCall />} />
         </Routes>
         <Footer />
       </BrowserRouter>
